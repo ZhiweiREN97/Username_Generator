@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Username Generator</title>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>Random Username Generator</h1>
+    <label for="social-media">Social Media</label>
+    <input type="radio" id="social-media" name="platform" value="social-media" checked>
+    <label for="game">Game</label>
+    <input type="radio" id="game" name="platform" value="game"><br><br>
+    <div id="inputs">
+      <label for="keywords">Enter your desired keywords:</label>
+      <input type="text" id="keywords" name="keywords"><br><br>
+      <label for="year">Enter your year of birth:</label>
+      <input type="text" id="year" name="year"><br><br>
+    </div>
+    <p>Your random username is: <span id="username"></span></p>
+    <div id="feedback" style="display: none;">
+      <label for="rating">How would you rate this username?</label>
+      <select id="rating" name="rating">
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Okay</option>
+        <option value="2">2 - Poor</option>
+        <option value="1">1 - Terrible</option>
+      </select><br><br>
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+      <button id="submit">Submit Feedback</button>
+    </div>
+    <button id="generate">Generate</button>
+  </body>
+</html>

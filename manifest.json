@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Random Username Generator",
+    "version": "1.0",
+    "description": "Generates a random username",
+    "icons": {
+      "16": "icon16.png"
+    },
+    "browser_action": {
+      "default_title": "Generate a random username",
+      "default_popup": "popup.html"
+    }
+  }
